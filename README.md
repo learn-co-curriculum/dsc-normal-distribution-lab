@@ -10,6 +10,7 @@ Students would be able to:
 
 #### A quick refresher ! 
 Here's the formula for calculating normal distribution density function.
+
 <img src="formula.jpg" width = 300>
 
 #### First generate a normal distribution containing 5000 values with mu=14 and sigma = 2.8
