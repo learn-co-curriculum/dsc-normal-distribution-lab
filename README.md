@@ -1,16 +1,18 @@
 
-# Gaussian/Normal Distributions Lab
+# Gaussian/Normal Distribution - Lab
+
+## Introduction
 
 In this lab we shall learn how to generate random normal distributions in python. We shall look into visualising a histogram and building a density function using the formula as well as seaborn's built in functions. 
+
 ## Objectives
-Students would be able to:
+You will be able to:
 * Generate random normal distributions in python with given parameters
 * Calculate the density function for normal distributions
 * Use seaborn to visualize distributions with histograms and density functions
 
-#### A quick refresher ! 
+## A quick refresher ! 
 Here's the formula for calculating normal distribution density function.
-
 <img src="formula.jpg" width = 300>
 
 #### First generate a normal distribution containing 5000 values with mu=14 and sigma = 2.8
