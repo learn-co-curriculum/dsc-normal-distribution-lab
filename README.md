@@ -11,7 +11,7 @@ You will be able to:
 * Calculate the density function for normal distributions
 * Use seaborn to visualize distributions with histograms and density functions
 
-## A quick refresher ! 
+## A quick refresher! 
 Here's the formula for calculating normal distribution density function.
 <img src="formula.jpg" width = 300>
 
