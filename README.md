@@ -34,7 +34,7 @@ Refer to [official documentation](https://matplotlib.org/api/_as_gen/matplotlib.
 ```python
 import matplotlib.pyplot as plt
 # Create the bins and histogram
-count, bins, ignored = plt.hist(s, 20, normed=True)
+count, bins, ignored = plt.hist(s, 20, density=True)
 ```
 
 
@@ -74,7 +74,7 @@ sns.distplot(s, bins=20, kde=True)
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a19d4cda0>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a121adac8>
 
 
 
