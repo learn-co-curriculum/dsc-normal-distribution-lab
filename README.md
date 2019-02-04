@@ -7,7 +7,7 @@ In this lab we shall learn how to generate random normal distributions in python
 
 ## Objectives
 You will be able to:
-* Generate random normal distributions in python with given parameters
+* Generate random normal distributions in Python with given parameters
 * Calculate the density function for normal distributions
 * Use seaborn to visualize distributions with histograms and density functions
 
