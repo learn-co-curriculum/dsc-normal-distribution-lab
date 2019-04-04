@@ -1,8 +1,8 @@
 
-# Gaussian/Normal Distribution - Lab
+# The Normal Distribution - Lab
 
 ## Introduction
-In this lab we shall learn how to generate random normal distributions in python. We shall look into visualising a histogram and building a density function using the formula as well as seaborn's built in functions. 
+In this lab, you'll learn how to generate random normal distributions in Python. You'll learn how to visualize a histogram and build a density function using the formula. 
 ## Objectives
 You will be able to:
 * Generate random normal distributions in python with given parameters
@@ -10,10 +10,19 @@ You will be able to:
 * Use seaborn to visualize distributions with histograms and density functions
 
 ## A quick refresher! 
-Here's the formula for calculating normal distribution density function.
-<img src="formula.jpg" width = 300>
 
-#### First generate a normal distribution containing 5000 values with mu=14 and sigma = 2.8
+Here's the formula for the normal distribution density function once more:
+
+$$ \large N(x) = \dfrac{1}{\sigma \sqrt {2\pi }}e^{-\dfrac{(x-\mu)^2}{2\sigma^2}}$$
+
+Here, 
+- $\mu$ is the mean
+- $\sigma$ is the standard deviation
+- $\pi \approx 3.14159 $ 
+- $ e \approx 2.71828 $
+
+
+## First generate a normal distribution containing 5000 values with $\mu=14$ and $\sigma = 2.8$
 
 
 ```python
@@ -21,14 +30,13 @@ Here's the formula for calculating normal distribution density function.
 import numpy as np
 
 mu, sigma = 14, 2.8
-N = 5000
-s = np.random.normal(mu, sigma, N)
+n = 5000
+s = np.random.normal(mu, sigma, n)
 ```
 
-#### Calculate a normalized histogram for this distribution in matplotlib - use bin size = 20. 
-#### Get the bin positions and count for each bin 
+## Calculate a normalized histogram for this distribution in matplotlib, with bin size = 20
 
-Refer to [official documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html) to view input and output options for `plt.hist()`
+Make sure to get the bin positions and counts for each of the obtained bins. You can use [official documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html) to view input and output options for `plt.hist()`
 
 
 ```python
@@ -41,7 +49,7 @@ count, bins, ignored = plt.hist(s, 20, density=True)
 ![png](index_files/index_6_0.png)
 
 
-#### Calculate the density function (using above formula) with mu, sigma and bin information calculated above .
+## Use the formula to calculate the density function with $\mu$, $\sigma$ and bin information obtained before
 
 
 ```python
@@ -49,7 +57,7 @@ count, bins, ignored = plt.hist(s, 20, density=True)
 density = 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mu)**2 / (2 * sigma**2))
 ```
 
-#### Plot the histogram and density function
+## Plot the histogram and density function
 
 
 ```python
@@ -63,7 +71,7 @@ plt.show()
 ![png](index_files/index_10_0.png)
 
 
-#### Visualize the distribution using seaborn and plot the KDE
+## Visualize the distribution using seaborn and plot the KDE
 
 
 ```python
