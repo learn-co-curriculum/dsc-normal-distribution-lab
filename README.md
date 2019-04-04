@@ -92,4 +92,4 @@ sns.distplot(s, bins=20, kde=True)
 
 ## Summary
 
-In this lab we saw how to generate random normal distributions in python using numpy. We also looked into calculating the density for gaussian distributions using the general formula as well as seaborn's kde. We shall now move on to see how we can analyze such variables for answering analytical questions. 
+In this lab, you learned how to generate random normal distributions in Python using Numpy. You also calculated the density for gaussian distributions using the general formula as well as seaborn's kde. Next, you'll move on an learn how normal distributions are used to answer analytical questions.
