@@ -30,6 +30,17 @@ Here,
 
 ```
 
+
+```python
+# __SOLUTION__ 
+# Generate a random normal variable with given parameters , n=5000
+import numpy as np
+
+mu, sigma = 14, 2.8
+n = 5000
+s = np.random.normal(mu, sigma, n)
+```
+
 ## Calculate a normalized histogram for this distribution in matplotlib, with bin size = 20
 
 Make sure to get the bin positions and counts for each of the obtained bins. You can use [official documentation](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html) to view input and output options for `plt.hist()`
@@ -41,7 +52,19 @@ Make sure to get the bin positions and counts for each of the obtained bins. You
 ```
 
 
-![png](index_files/index_6_0.png)
+![png](index_files/index_7_0.png)
+
+
+
+```python
+# __SOLUTION__ 
+import matplotlib.pyplot as plt
+# Create the bins and histogram
+count, bins, ignored = plt.hist(s, 20, density=True)
+```
+
+
+![png](index_files/index_8_0.png)
 
 
 ## Use the formula to calculate the density function with $\mu$, $\sigma$ and bin information obtained before
@@ -50,6 +73,13 @@ Make sure to get the bin positions and counts for each of the obtained bins. You
 ```python
 # Calculate the normal Density function 
 density = None
+```
+
+
+```python
+# __SOLUTION__ 
+# Calculate the normal Density function 
+density = 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mu)**2 / (2 * sigma**2))
 ```
 
 ## Plot the histogram and density function
@@ -61,7 +91,20 @@ density = None
 ```
 
 
-![png](index_files/index_10_0.png)
+![png](index_files/index_13_0.png)
+
+
+
+```python
+# __SOLUTION__ 
+# Plot histogram along with the density function
+plt.hist(s, 20, normed=True)
+plt.plot(bins, density)
+plt.show()
+```
+
+
+![png](index_files/index_14_0.png)
 
 
 ## Visualize the distribution using seaborn and plot the KDE
@@ -80,7 +123,25 @@ density = None
 
 
 
-![png](index_files/index_12_1.png)
+![png](index_files/index_16_1.png)
+
+
+
+```python
+# __SOLUTION__ 
+import seaborn as sns
+sns.distplot(s, bins=20, kde=True)
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a121adac8>
+
+
+
+
+![png](index_files/index_17_1.png)
 
 
 ## Summary
