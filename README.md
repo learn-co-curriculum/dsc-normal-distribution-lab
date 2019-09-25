@@ -5,7 +5,7 @@
 In this lab, you'll learn how to generate random normal distributions in Python. You'll learn how to visualize a histogram and build a density function using the formula. 
 ## Objectives
 You will be able to:
-* Generate random normal distributions in python with given parameters
+* Generate random normal distributions in Python with given parameters
 * Calculate the density function for normal distributions
 * Use seaborn to visualize distributions with histograms and density functions
 
@@ -146,4 +146,4 @@ sns.distplot(s, bins=20, kde=True)
 
 ## Summary
 
-In this lab, you learned how to generate random normal distributions in Python using Numpy. You also calculated the density for gaussian distributions using the general formula as well as seaborn's kde. Next, you'll move on an learn how normal distributions are used to answer analytical questions.
+In this lab, you learned how to generate random normal distributions in Python using Numpy. You also calculated the density for normal distributions using the general formula as well as seaborn's KDE. Next, you'll move on to learn how normal distributions are used to answer analytical questions.
