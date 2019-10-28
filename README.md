@@ -2,12 +2,15 @@
 # The Normal Distribution - Lab
 
 ## Introduction
+
 In this lab, you'll learn how to generate random normal distributions in Python. You'll learn how to visualize a histogram and build a density function using the formula. 
+
 ## Objectives
 You will be able to:
-* Generate random normal distributions in Python with given parameters
-* Calculate the density function for normal distributions
-* Use seaborn to visualize distributions with histograms and density functions
+
+* Use `numpy` to generate a random normal distribution
+* Calculate the density function for normal distributions with a Python function
+* Plot and interpret density plots and comment on the shape of the plot
 
 ## A quick refresher! 
 
@@ -59,6 +62,7 @@ Make sure to get the bin positions and counts for each of the obtained bins. You
 ```python
 # __SOLUTION__ 
 import matplotlib.pyplot as plt
+%matplotlib inline
 # Create the bins and histogram
 count, bins, ignored = plt.hist(s, 20, density=True)
 ```
