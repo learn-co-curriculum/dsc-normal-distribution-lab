@@ -55,10 +55,6 @@ Make sure to get the bin positions and counts for each of the obtained bins. You
 ```
 
 
-![png](index_files/index_7_0.png)
-
-
-
 ```python
 # __SOLUTION__ 
 import matplotlib.pyplot as plt
@@ -95,14 +91,10 @@ density = 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mu)**2 / (2 * sigma
 ```
 
 
-![png](index_files/index_13_0.png)
-
-
-
 ```python
 # __SOLUTION__ 
 # Plot histogram along with the density function
-plt.hist(s, 20, normed=True)
+plt.hist(s, 20, density=True)
 plt.plot(bins, density)
 plt.show()
 ```
@@ -120,32 +112,16 @@ plt.show()
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a121adac8>
-
-
-
-
-![png](index_files/index_16_1.png)
-
-
-
 ```python
 # __SOLUTION__ 
 import seaborn as sns
-sns.distplot(s, bins=20, kde=True)
+import warnings
+warnings.filterwarnings('ignore')
+sns.distplot(s, bins=20, kde=True);
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a121adac8>
-
-
-
-
-![png](index_files/index_17_1.png)
+![png](index_files/index_17_0.png)
 
 
 ## Summary
