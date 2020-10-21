@@ -66,7 +66,7 @@ density = 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mu)**2 / (2 * sigma
 
 ```python
 # Plot histogram along with the density function
-plt.hist(s, 20, normed=True)
+plt.hist(s, 20, density=True)
 plt.plot(bins, density)
 plt.show()
 ```
@@ -80,18 +80,13 @@ plt.show()
 
 ```python
 import seaborn as sns
-sns.distplot(s, bins=20, kde=True)
+import warnings
+warnings.filterwarnings('ignore')
+sns.distplot(s, bins=20, kde=True);
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a121adac8>
-
-
-
-
-![png](index_files/index_12_1.png)
+![png](index_files/index_12_0.png)
 
 
 ## Summary
