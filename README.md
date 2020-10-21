@@ -81,7 +81,7 @@ plt.show()
 ```python
 import seaborn as sns
 import warnings
-warnings.filterwarnings('ignore')
+warnings.filterwarnings(action='ignore', category=FutureWarning)
 sns.distplot(s, bins=20, kde=True);
 ```
 
