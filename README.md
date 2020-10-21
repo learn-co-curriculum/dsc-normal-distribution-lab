@@ -43,10 +43,6 @@ Make sure to get the bin positions and counts for each of the obtained bins. You
 
 ```
 
-
-![png](index_files/index_6_0.png)
-
-
 ## Use the formula to calculate the density function with $\mu$, $\sigma$ and bin information obtained before
 
 
@@ -63,10 +59,6 @@ density = None
 
 ```
 
-
-![png](index_files/index_10_0.png)
-
-
 ## Visualize the distribution using seaborn and plot the KDE
 
 
@@ -74,17 +66,6 @@ density = None
 # Use seaborn to plot the histogram with KDE
 
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1a121adac8>
-
-
-
-
-![png](index_files/index_12_1.png)
-
 
 ## Summary
 
