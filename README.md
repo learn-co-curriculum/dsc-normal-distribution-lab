@@ -22,7 +22,7 @@ Here,
 - $\mu$ is the mean
 - $\sigma$ is the standard deviation
 - $\pi \approx 3.14159 $ 
-- $ e \approx 2.71828 $
+- $e \approx 2.71828 $
 
 
 ## First generate a normal distribution containing 5000 values with $\mu=14$ and $\sigma = 2.8$
